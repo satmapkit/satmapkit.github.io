@@ -1,13 +1,13 @@
 feature_row:
   - title: "AlongTrackSimulator"
     excerpt: "Along-track altimetry sampling simulation and analysis."
-    url: "https://github.com/<org>/AlongTrackSimulator"
+    url: "https://github.com/satmapkit/AlongTrackSimulator"
     btn_label: "View repo"
     btn_class: "btn--primary"
 
   - title: "OceanDB"
     excerpt: "Ocean datasets + query tooling for analysis workflows."
-    url: "https://github.com/<org>/OceanDB"
+    url: "https://github.com/Nazanne/OceanDB"
     btn_label: "View repo"
     btn_class: "btn--primary"
 
