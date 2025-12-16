@@ -26,6 +26,7 @@ feature_row:
     url: "https://github.com/Nazanne/OceanDB"
     btn_class: "btn--primary"
     btn_label: "View repo"
+    image_path: /assets/images/slaPanama.png
     
 - title: "MapInterp"
     excerpt: "Algorithm agnostic interpolation framework for satellite altimetry"
