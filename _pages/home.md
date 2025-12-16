@@ -17,7 +17,7 @@ excerpt: >
 feature_row:
   - title: "AlongTrackSimulator"
     excerpt: "Along-track altimetry sampling simulation and analysis."
-    url: "https://github.com/SatMapKit/AlongTrackSimulator"
+    url: "https://satmapkit.github.io/AlongTrackSimulator/"
     btn_class: "btn--primary"
     btn_label: "View repo"
 
