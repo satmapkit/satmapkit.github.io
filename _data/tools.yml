@@ -1,0 +1,18 @@
+- id: alongtrack
+  name: AlongTrackSimulator
+  category: Simulate
+  language: MATLAB
+  description: Simulate satellite ground tracks and sample numerical ocean models using real mission patterns.
+  url: https://satmapkit.github.io/AlongTrackSimulator/
+- id: oceandb
+  name: OceanDB
+  category: Query
+  language: Python · PostgreSQL
+  description: Ingest and query along-track altimetry observations and eddy datasets in space and time.
+  url: https://github.com/satmapkit/OceanDB
+- id: mapinterp
+  name: MapInterp
+  category: Interpolate
+  language: Python
+  description: Interpolate observations from OceanDB onto points and grids with interchangeable methods.
+  url: https://github.com/satmapkit/MapInterp

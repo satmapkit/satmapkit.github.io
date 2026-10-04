@@ -1,27 +1,27 @@
-# Minimal Mistakes remote theme starter
+# SatMapKit website
 
-Click [**Use this template**](https://github.com/mmistakes/mm-github-pages-starter/generate) button above for the quickest method of getting started with the [Minimal Mistakes Jekyll theme](https://github.com/mmistakes/minimal-mistakes).
+The SatMapKit landing page, tool catalog, and About page. Jekyll builds the site using local layouts and CSS; no remote theme or JavaScript is needed.
 
-Contains basic configuration to get you a site with:
+## Local preview
 
-- Sample posts.
-- Sample top navigation.
-- Sample author sidebar with social links.
-- Sample footer links.
-- Paginated home page.
-- Archive pages for posts grouped by year, category, and tag.
-- Sample about page.
-- Sample 404 page.
-- Site wide search.
+With Ruby and Bundler installed:
 
-Replace sample content with your own and [configure as necessary](https://mmistakes.github.io/minimal-mistakes/docs/configuration/).
+```sh
+bundle install
+bundle exec jekyll serve --host 127.0.0.1
+```
 
----
+Open <http://127.0.0.1:4000>. The Gemfile pins Jekyll to the version used by GitHub Pages. Keep the generated `_site/` directory out of version control.
 
-## Troubleshooting
+## Content
 
-If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:
+- `index.html` is the only homepage source.
+- `_data/tools.yml` contains the project descriptions and card destinations. Each card is a single link, with no separate button.
+- `_data/navigation.yml` defines the main navigation.
+- `_pages/` contains the About, tool catalog, and 404 pages.
+- `_layouts/`, `_includes/`, and `assets/css/site.css` define the presentation.
+- `assets/images/slaPanama.png` is the existing scientific figure used on the homepage. Preserve the figure's colors and avoid adding a quantitative caption without checking its source data.
 
-- [Ruby 101](https://jekyllrb.com/docs/ruby-101/)
-- [Setting up a Jekyll site with GitHub Pages](https://jekyllrb.com/docs/github-pages/)
-- [Configuring GitHub Metadata](https://github.com/jekyll/github-metadata/blob/master/docs/configuration.md#configuration) to work properly when developing locally and avoid `No GitHub API authentication could be found. Some fields may be missing or have incorrect data.` warnings.
+## Publishing
+
+GitHub Pages is configured to publish from the root of `working-version`. This iteration is based on that branch and consolidates its competing homepage sources. Changes made only on `master` do not update the live site. Publish reviewed changes by integrating them into `working-version`, or deliberately change the Pages source as part of a separately authorized deployment.

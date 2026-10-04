@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<div class="page-shell section-shell{% if page.wide %} page-shell-wide{% endif %}">
+  <header class="page-heading">
+    <p class="eyebrow">{{ page.eyebrow | default: site.title }}</p>
+    <h1>{{ page.title }}</h1>
+  </header>
+  <div class="{% if page.wide %}page-content{% else %}prose{% endif %}">{{ content }}</div>
+</div>
