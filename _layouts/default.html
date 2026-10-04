@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="theme-color" content="#133c4a">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.title | escape }}">
+  <meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}">
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/images/slaPanama.png' | absolute_url }}">
+  <meta property="og:image:alt" content="Satellite altimetry tracks near Panama">
+  <link rel="icon" href="{{ '/assets/images/mark.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>
+<body class="{{ page.page_class | default: 'content-page' }}">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-shell section-shell">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="SatMapKit home">
+        {% include brand-mark.svg %}
+        <span>SatMapKit</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul>
+          {% for item in site.data.navigation.main %}
+          <li><a href="{% if item.url contains '://' %}{{ item.url }}{% else %}{{ item.url | relative_url }}{% endif %}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">{{ content }}</main>
+  <footer class="site-footer">
+    <div class="footer-shell section-shell">
+      <div><a class="footer-brand" href="{{ '/' | relative_url }}">SatMapKit</a><p>Tools for satellite altimetry research.</p></div>
+      <div class="footer-links"><a href="{{ '/about/' | relative_url }}">About</a><a href="https://github.com/satmapkit">GitHub</a><span>© {{ site.time | date: '%Y' }} SatMapKit</span></div>
+    </div>
+  </footer>
+</body>
+</html>

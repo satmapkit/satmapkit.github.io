@@ -1,41 +1,20 @@
 title: SatMapKit
-description: "Satellite altimetry tools for mapping, analysis, and parameter estimation"
-github_username: SatMapKit
-minimal_mistakes_skin: default
-search: false
-
-# Build settings
+description: Tools for satellite altimetry research
+url: "https://satmapkit.github.io"
+baseurl: ""
+timezone: America/Los_Angeles
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-
-include:
-  - _pages
-
-# Plugins (previously gems:)
+kramdown:
+  input: GFM
 plugins:
   - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-
-
-#defaults:
-#  # _posts
-#  - scope:
-#      path: ""
-#      type: posts
-#    values:
-#      layout: single
-#      author_profile: true
-#      read_time: true
-#      comments: true
-#      share: true
-#      related: true
-#  # _pages
-#  - scope:
-#      path: "_pages"
-#      type: pages
-#    values:
-#      layout: single
-#      author_profile: true
+include:
+  - _pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - tools
+  - output
+  - .bundle

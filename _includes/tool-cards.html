@@ -1,0 +1,11 @@
+<div class="tool-grid">
+  {% assign card_heading = include.heading | default: 'h3' %}
+  {% for tool in site.data.tools %}
+  <a class="tool-card" href="{{ tool.url }}" aria-labelledby="{{ tool.id }}-title" aria-describedby="{{ tool.id }}-description">
+    <div class="tool-card-top"><span class="tool-icon tool-icon-{{ tool.id }}">{% include tool-icon.svg project=tool.id %}</span><span class="tool-category">{{ tool.category }}</span></div>
+    <{{ card_heading }} id="{{ tool.id }}-title">{{ tool.name }}</{{ card_heading }}>
+    <p id="{{ tool.id }}-description">{{ tool.description }}</p>
+    <span class="tool-language">{{ tool.language }}</span>
+  </a>
+  {% endfor %}
+</div>
