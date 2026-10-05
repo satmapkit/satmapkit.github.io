@@ -2,7 +2,7 @@
 layout: page
 permalink: /about/
 title: About SatMapKit
-description: Tools and research context for satellite altimetry workflows.
+description: SatMapKit projects, NASA funding, and principal investigators.
 eyebrow: About
 ---
 
@@ -18,7 +18,15 @@ SatMapKit brings together tools for satellite altimetry research. The projects s
 
 ## Research context and credits
 
-AlongTrackSimulator is maintained by Jeffrey J. Early. Its [acknowledgements](https://github.com/satmapkit/AlongTrackSimulator/blob/main/Documentation/WebsiteDocumentation/acknowledgements.md) document NASA support and provide citation information for that project.
+<div class="funding-credit">
+  <div class="funding-insignia">
+    <img src="{{ '/assets/images/nasa-grantee.png' | relative_url }}" alt="NASA Grantee" width="1020" height="1200">
+  </div>
+  <p>SatMapKit is supported by NASA grant <strong>80NSSC26K0416</strong>. The principal investigators are Cimarron Wortham, <a href="https://jeffreyearly.com">Jeffrey J. Early</a>, and <a href="https://jmlilly.net">Jonathan Lilly</a>.</p>
+  <p class="funding-disclaimer">The material contained in this document is based upon work supported by a National Aeronautics and Space Administration (NASA) grant or cooperative agreement. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author and do not necessarily reflect the views of NASA.</p>
+</div>
+
+AlongTrackSimulator is maintained by [Jeffrey J. Early](https://jeffreyearly.com). Its [acknowledgements](https://github.com/satmapkit/AlongTrackSimulator/blob/main/Documentation/WebsiteDocumentation/acknowledgements.md) document NASA support and provide citation information for that project.
 
 ## Explore and contribute
 

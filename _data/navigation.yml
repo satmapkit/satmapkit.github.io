@@ -1,8 +1,6 @@
 main:
   - title: Tools
     url: /tools/
-  - title: Getting started
-    url: /#getting-started
   - title: About
     url: /about/
   - title: GitHub
